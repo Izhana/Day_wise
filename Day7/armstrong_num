@@ -10,21 +10,26 @@ int main() {
     
     m = n;
     
-    if (n < 0) {
+    if (n < 0) 
+{
         printf("Not an Armstrong Number");
         return 0;
     }
     
-    while (n != 0) {
-        x = x + (int)pow(n % 10, 3); // Cast the result of pow to int
+    while (n != 0) 
+{
+        x = x + (int)pow(n % 10, 3); 
         n = n / 10;
     }
     
-    if (x == m) {
+    if (x == m) 
+{
         printf("Armstrong Number");
-    } else {
+    } 
+else
+{
         printf("Not Armstrong Number");
     }
     
-    return 0; // Correctly placed return statement
+    return 0; 
 }
